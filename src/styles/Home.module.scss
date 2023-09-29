@@ -1,0 +1,20 @@
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin: auto;
+  h1{
+    text-align: center;
+  }
+  margin: auto;
+  ul.flex{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      width: 33%;
+      list-style: none;
+     
+    }
+  }
+}
