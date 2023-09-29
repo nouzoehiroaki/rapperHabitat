@@ -9,12 +9,18 @@
 .main h1 {
   text-align: center;
 }
-.main ul.flex {
-  display: flex;
-  flex-wrap: wrap;
+.main .iframeWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
 }
-.main ul.flex li {
-  width: 33%;
-  list-style: none;
+.main .iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=Home.module.css.map */
