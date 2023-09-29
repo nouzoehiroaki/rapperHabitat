@@ -8,13 +8,18 @@
     text-align: center;
   }
   margin: auto;
-  ul.flex{
-    display: flex;
-    flex-wrap: wrap;
-    li{
-      width: 33%;
-      list-style: none;
-     
+  .iframeWrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }

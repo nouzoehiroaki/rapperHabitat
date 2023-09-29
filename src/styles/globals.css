@@ -1,3 +1,10 @@
 .leaflet-container {
   height: 100vh;
 }
+.leaflet-popup {
+  width: 400px;
+}
+.leaflet-popup-content {
+  margin: 0 auto;
+  padding: 20px;
+}
