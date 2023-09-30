@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import { API_ENDPOINT } from '../../libs/api'
-import { getAllArtists } from '../../models/Artist'
-import { ArtistType } from '../../types/types'
+import { API_ENDPOINT } from '@/libs/api'
+import { getAllArtists } from '@/models/Artist'
+import { ArtistType } from '@/types/types'
 import { Marker, Popup, MapContainer, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-import styles from '../../styles/Home.module.scss'
+import styles from '@/styles/Home.module.scss'
 import Link from 'next/link'
 export const Map: React.FC = () => {
     const [artists, setArtists] = useState<ArtistType[]>([]);
@@ -12,7 +12,6 @@ export const Map: React.FC = () => {
         const fetchArtistsData = async () => {
             try {
                 let res = await getAllArtists(API_ENDPOINT);
-                console.log("getAllArtists response:", res);
                 if (res && res.results) {
                     setArtists(res.results);
                 }
@@ -62,7 +61,7 @@ export const Map: React.FC = () => {
                         );
                     })
                 }
-            </MapContainer>,
+            </MapContainer>
         </div>
     )
 }
